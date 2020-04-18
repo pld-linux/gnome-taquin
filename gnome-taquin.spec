@@ -1,16 +1,16 @@
 Summary:	GNOME Taquin game - slide tiles to their correct places
 Summary(pl.UTF-8):	Gra GNOME Taquin - przesuwanie kafelków na ich właściwe miejsca
 Name:		gnome-taquin
-Version:	3.34.3
+Version:	3.36.0
 Release:	1
 License:	GPL v3+ (code), CC-BY-SA v4.0 (help)
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-taquin/3.34/%{name}-%{version}.tar.xz
-# Source0-md5:	8e6e8bd211c3b53a29e2328cec01e1b1
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-taquin/3.36/%{name}-%{version}.tar.xz
+# Source0-md5:	d1a832f166114ef93808a0783cb24602
 URL:		https://wiki.gnome.org/Apps/Taquin
 BuildRequires:	appstream-glib
 BuildRequires:	gettext-tools
-BuildRequires:	glib2-devel >= 1:2.40.0
+BuildRequires:	glib2-devel >= 1:2.42.0
 BuildRequires:	gsound-devel >= 1.0.2
 BuildRequires:	gtk+3-devel >= 3.22.23
 BuildRequires:	librsvg-devel >= 1:2.32.0
@@ -24,9 +24,9 @@ BuildRequires:	vala-gsound >= 1.0.2
 BuildRequires:	vala-librsvg >= 1:2.32.0
 BuildRequires:	xz
 BuildRequires:	yelp-tools
-Requires(post,postun):	glib2 >= 1:2.40.0
+Requires(post,postun):	glib2 >= 1:2.42.0
 Requires(post,postun):	gtk-update-icon-cache
-Requires:	glib2 >= 1:2.40.0
+Requires:	glib2 >= 1:2.42.0
 Requires:	gsound >= 1.0.2
 Requires:	gtk+3 >= 3.22.23
 Requires:	librsvg >= 1:2.32.0
@@ -68,8 +68,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING.{sounds,themes} NEWS
+%doc AUTHORS COPYING.{sounds,themes} NEWS README.md
 %attr(755,root,root) %{_bindir}/gnome-taquin
+%{_datadir}/dbus-1/services/org.gnome.Taquin.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Taquin.gschema.xml
 %{_datadir}/gnome-taquin
 %{_datadir}/metainfo/org.gnome.Taquin.appdata.xml
