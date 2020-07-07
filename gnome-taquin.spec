@@ -1,12 +1,12 @@
 Summary:	GNOME Taquin game - slide tiles to their correct places
 Summary(pl.UTF-8):	Gra GNOME Taquin - przesuwanie kafelków na ich właściwe miejsca
 Name:		gnome-taquin
-Version:	3.36.3
+Version:	3.36.4
 Release:	1
 License:	GPL v3+ (code), CC-BY-SA v4.0 (help)
 Group:		X11/Applications/Games
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-taquin/3.36/%{name}-%{version}.tar.xz
-# Source0-md5:	d20f38ddf7b7efa7da366e24edf8a684
+# Source0-md5:	cb9a15c43f1a2f5d0b0a2abf668403cc
 URL:		https://wiki.gnome.org/Apps/Taquin
 BuildRequires:	appstream-glib
 BuildRequires:	gettext-tools
