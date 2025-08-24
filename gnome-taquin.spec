@@ -5,7 +5,7 @@ Version:	3.38.1
 Release:	1
 License:	GPL v3+ (code), CC-BY-SA v4.0 (help)
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-taquin/3.38/%{name}-%{version}.tar.xz
+Source0:	https://download.gnome.org/sources/gnome-taquin/3.38/%{name}-%{version}.tar.xz
 # Source0-md5:	14beb7050f7356e919935fa79bf89b32
 URL:		https://wiki.gnome.org/Apps/Taquin
 BuildRequires:	appstream-glib
